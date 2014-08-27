@@ -1,0 +1,833 @@
+2014-08-26 02:55:55.695+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2014-08-26 02:55:55.695+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=110M
+    neostore.nodestore.db.mapped_memory=30M
+    neostore.relationshipstore.db.mapped_memory=134M
+    neostore.propertystore.db.strings.mapped_memory=93M
+    store_dir=5901.db
+    neostore.propertystore.db.arrays.mapped_memory=106M
+    ephemeral=false
+2014-08-26 02:55:55.695+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2014-08-26 02:55:55.696+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 7.90 GB
+    Free Physical memory: 3.73 GB
+    Committed virtual memory: 253.18 MB
+    Total swap space: 17.07 GB
+    Free swap space: 11.85 GB
+2014-08-26 02:55:55.697+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 89.00 MB
+    Total memory: 121.50 MB
+    Max   memory: 1.76 GB
+    Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+    Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=630.81 kB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: PS Eden Space (Heap memory): committed=32.50 MB, used=32.50 MB, max=665.00 MB, threshold=?
+    Memory Pool: PS Survivor Space (Heap memory): committed=5.00 MB, used=0.00 B, max=5.00 MB, threshold=?
+    Memory Pool: PS Old Gen (Heap memory): committed=84.00 MB, used=0.00 B, max=1.32 GB, threshold=0.00 B
+    Memory Pool: PS Perm Gen (Non-heap memory): committed=21.00 MB, used=11.42 MB, max=82.00 MB, threshold=0.00 B
+2014-08-26 02:55:55.699+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Windows 8.1; version: 6.3; arch: amd64; cpus: 4
+    Process id: 9060@myPC
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Europe/London
+2014-08-26 02:55:55.699+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 24.60-b09
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Dfile.encoding=UTF-8]
+2014-08-26 02:55:55.700+0000 INFO  [org.neo4j]: Java classpath:
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.3.1/concurrentlinkedhashmap-lru-1.3.1.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/neo4j/neo4j-graph-matching/2.0.3/neo4j-graph-matching-2.0.3.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/neo4j/neo4j/2.0.3/neo4j-2.0.3.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\resources.jar
+     [classpath + loader.0] file:/C:/Users/my/workspace2/ExtractWorkflowRun/target/classes/
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/zipfs.jar
+     [bootstrap] C:\Program Files\Java\jre7\classes
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/jaccess.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/neo4j/neo4j-lucene-index/2.0.3/neo4j-lucene-index-2.0.3.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\jfr.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/jfree/jcommon/1.0.21/jcommon-1.0.21.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\jsse.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/sunmscapi.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/parboiled/parboiled-scala_2.10/1.1.6/parboiled-scala_2.10-1.1.6.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\rt.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/access-bridge-64.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/net/sf/opencsv/opencsv/2.0/opencsv-2.0.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\charsets.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/jfree/jfreechart/1.0.17/jfreechart-1.0.17.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/neo4j/neo4j-udc/2.0.3/neo4j-udc-2.0.3.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/neo4j/neo4j-cypher/2.0.3/neo4j-cypher-2.0.3.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/parboiled/parboiled-core/1.1.6/parboiled-core-1.1.6.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/apache/lucene/lucene-core/3.6.2/lucene-core-3.6.2.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/neo4j/neo4j-jmx/2.0.3/neo4j-jmx-2.0.3.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/localedata.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/neo4j/neo4j-cypher-commons/2.0.3/neo4j-cypher-commons-2.0.3.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/neo4j/neo4j-kernel/2.0.3/neo4j-kernel-2.0.3.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/sunjce_provider.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/neo4j/neo4j-graph-algo/2.0.3/neo4j-graph-algo-2.0.3.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/com/connexience/server-common/3.1-SNAPSHOT/server-common-3.1-SNAPSHOT.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/neo4j/neo4j-cypher-compiler-2.0/2.0.3/neo4j-cypher-compiler-2.0-2.0.3.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\jce.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/json/json/20140107/json-20140107.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/org/neo4j/neo4j-cypher-compiler-1.9/2.0.3/neo4j-cypher-compiler-1.9-2.0.3.jar
+     [bootstrap] C:\Program Files\Java\jre7\lib\sunrsasign.jar
+     [classpath + loader.0] file:/C:/Users/my/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/dnsns.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre7/lib/ext/sunec.jar
+2014-08-26 02:55:55.710+0000 INFO  [org.neo4j]: Library path:
+    C:\Program Files\Java\jre7\bin
+    C:\Windows\Sun\Java\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\Program Files (x86)\Intel\iCLS Client
+    C:\Program Files\Intel\iCLS Client
+    C:\Windows\System32
+    C:\Windows
+    C:\Windows\System32\wbem
+    C:\Windows\System32\WindowsPowerShell\v1.0
+    C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+    C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+    C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+    C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+    C:\Program Files\Intel\WiFi\bin
+    C:\Program Files\Common Files\Intel\WirelessCommon
+    C:\Program Files (x86)\Windows Live\Shared
+    C:\Users\my\workspace2\ExtractWorkflowRun\%M2_HOME%\bin
+    C:\Program Files\Java\jdk1.7.0_60\bin
+    C:\Program Files\Java\jdk1.7.0_60\lib\tools.jar
+    C:\Program Files\EmEditor
+    C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn
+    C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+    C:\Program Files\Microsoft SQL Server\110\DTS\Binn
+    C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio
+    C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn
+    C:\Users\my\Desktop\project\apache-maven-3.2.1-bin\apache-maven-3.2.1\bin
+    C:\Users\my\workspace2\ExtractWorkflowRun
+2014-08-26 02:55:55.719+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = C:\Program Files\Java\jre7\bin
+    path.separator = ;
+    file.encoding.pkg = sun.io
+    user.country = CN
+    user.script = 
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = 
+    user.dir = C:\Users\my\workspace2\ExtractWorkflowRun
+    user.variant = 
+    sun.jnu.encoding = GBK
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    user.home = C:\Users\my
+    user.timezone = Europe/London
+    file.encoding = UTF-8
+    user.name = my
+    sun.java.command = ExtractWorkflowRun.ExtractWorkflowRun.CreateGraph
+    sun.arch.data.model = 64
+    user.language = zh
+    awt.toolkit = sun.awt.windows.WToolkit
+    file.separator = \
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.desktop = windows
+    sun.cpu.isalist = amd64
+2014-08-26 02:55:55.719+0000 INFO  [org.neo4j]: Network information:
+    Interface Software Loopback Interface 1:
+        address: 127.0.0.1
+        address: 0:0:0:0:0:0:0:1
+    Interface Microsoft Kernel Debug Network Adapter:
+    Interface Intel(R) Dual Band Wireless-N 7260:
+        address: 192.168.0.7
+        address: fe80:0:0:0:10fd:2900:e540:f1a2%3
+    Interface ASIX AX88772B USB2.0 to Fast Ethernet Adapter:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter:
+        address: fe80:0:0:0:8517:14e5:3cce:b60c%5
+    Interface Microsoft ISATAP Adapter:
+    Interface Microsoft 6to4 Adapter:
+    Interface Teredo Tunneling Pseudo-Interface:
+    Interface Microsoft ISATAP Adapter #4:
+    Interface VMware Virtual Ethernet Adapter for VMnet1:
+        address: 192.168.32.1
+        address: fe80:0:0:0:e0dd:53c6:e592:81f7%10
+    Interface VMware Virtual Ethernet Adapter for VMnet8:
+        address: 192.168.132.1
+        address: fe80:0:0:0:dd4a:2063:b357:1b46%11
+    Interface Microsoft ISATAP Adapter #5:
+    Interface Microsoft ISATAP Adapter #6:
+    Interface Microsoft Hosted Network Virtual Adapter:
+    Interface Intel(R) Dual Band Wireless-N 7260-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-Virtual WiFi Filter Driver-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-Native WiFi Filter Driver-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-QoS Packet Scheduler-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-WFP 802.3 MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2014-08-26 02:55:55.777+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2014-08-26 02:55:55.787+0000 INFO  [org.neo4j]: Creating new db @ 5901.db\neostore
+2014-08-26 02:55:56.234+0000 INFO  [org.neo4j]: [5901.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-08-26 02:55:56.236+0000 INFO  [org.neo4j]: [5901.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-08-26 02:55:56.240+0000 INFO  [org.neo4j]: 5901.db\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.291+0000 INFO  [org.neo4j]: 5901.db\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.378+0000 INFO  [org.neo4j]: [5901.db\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-08-26 02:55:56.380+0000 INFO  [org.neo4j]: [5901.db\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-08-26 02:55:56.395+0000 INFO  [org.neo4j]: 5901.db\neostore.labeltokenstore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.430+0000 INFO  [org.neo4j]: 5901.db\neostore.labeltokenstore.db hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.493+0000 INFO  [org.neo4j]: [5901.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-08-26 02:55:56.494+0000 INFO  [org.neo4j]: [5901.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-08-26 02:55:56.496+0000 INFO  [org.neo4j]: [5901.db\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-08-26 02:55:56.497+0000 INFO  [org.neo4j]: [5901.db\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-08-26 02:55:56.498+0000 INFO  [org.neo4j]: [5901.db\neostore.propertystore.db.strings] brickCount=0 brickSize=97408b mappedMem=97517568b (storeSize=128b)
+2014-08-26 02:55:56.499+0000 INFO  [org.neo4j]: [5901.db\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-08-26 02:55:56.500+0000 INFO  [org.neo4j]: [5901.db\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-08-26 02:55:56.502+0000 INFO  [org.neo4j]: [5901.db\neostore.propertystore.db.arrays] brickCount=0 brickSize=111104b mappedMem=111149056b (storeSize=128b)
+2014-08-26 02:55:56.503+0000 INFO  [org.neo4j]: [5901.db\neostore.propertystore.db] brickCount=0 brickSize=1153412b mappedMem=115343360b (storeSize=0b)
+2014-08-26 02:55:56.504+0000 INFO  [org.neo4j]: [5901.db\neostore.relationshipstore.db] brickCount=0 brickSize=1405074b mappedMem=140509184b (storeSize=0b)
+2014-08-26 02:55:56.505+0000 INFO  [org.neo4j]: [5901.db\neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2014-08-26 02:55:56.506+0000 INFO  [org.neo4j]: [5901.db\neostore.nodestore.db] brickCount=0 brickSize=314566b mappedMem=31457280b (storeSize=0b)
+2014-08-26 02:55:56.507+0000 INFO  [org.neo4j]: [5901.db\neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=64b)
+2014-08-26 02:55:56.508+0000 INFO  [org.neo4j]: [5901.db\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-08-26 02:55:56.525+0000 INFO  [org.neo4j]: 5901.db\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.558+0000 INFO  [org.neo4j]: 5901.db\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.583+0000 INFO  [org.neo4j]: 5901.db\neostore.labeltokenstore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.621+0000 INFO  [org.neo4j]: 5901.db\neostore.labeltokenstore.db hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.658+0000 INFO  [org.neo4j]: 5901.db\neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.689+0000 INFO  [org.neo4j]: 5901.db\neostore.propertystore.db.index.keys hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.716+0000 INFO  [org.neo4j]: 5901.db\neostore.propertystore.db.index hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.768+0000 INFO  [org.neo4j]: 5901.db\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.800+0000 INFO  [org.neo4j]: 5901.db\neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.837+0000 INFO  [org.neo4j]: 5901.db\neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.864+0000 INFO  [org.neo4j]: 5901.db\neostore.nodestore.db.labels hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.895+0000 INFO  [org.neo4j]: 5901.db\neostore.nodestore.db hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.922+0000 INFO  [org.neo4j]: 5901.db\neostore.schemastore.db hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:55:56.973+0000 INFO  [org.neo4j]: 5901.db\neostore hit=0 miss=8 switches=0 ooe=0
+2014-08-26 02:55:57.010+0000 INFO  [org.neo4j]: [5901.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-08-26 02:55:57.012+0000 INFO  [org.neo4j]: [5901.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-08-26 02:55:57.014+0000 INFO  [org.neo4j]: [5901.db\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-08-26 02:55:57.015+0000 INFO  [org.neo4j]: [5901.db\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-08-26 02:55:57.017+0000 INFO  [org.neo4j]: [5901.db\neostore.propertystore.db.strings] brickCount=0 brickSize=97408b mappedMem=97517568b (storeSize=128b)
+2014-08-26 02:55:57.019+0000 INFO  [org.neo4j]: [5901.db\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-08-26 02:55:57.020+0000 INFO  [org.neo4j]: [5901.db\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-08-26 02:55:57.021+0000 INFO  [org.neo4j]: [5901.db\neostore.propertystore.db.arrays] brickCount=0 brickSize=111104b mappedMem=111149056b (storeSize=128b)
+2014-08-26 02:55:57.022+0000 INFO  [org.neo4j]: [5901.db\neostore.propertystore.db] brickCount=0 brickSize=1153412b mappedMem=115343360b (storeSize=0b)
+2014-08-26 02:55:57.023+0000 INFO  [org.neo4j]: [5901.db\neostore.relationshipstore.db] brickCount=0 brickSize=1405074b mappedMem=140509184b (storeSize=0b)
+2014-08-26 02:55:57.024+0000 INFO  [org.neo4j]: [5901.db\neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2014-08-26 02:55:57.025+0000 INFO  [org.neo4j]: [5901.db\neostore.nodestore.db] brickCount=0 brickSize=314566b mappedMem=31457280b (storeSize=0b)
+2014-08-26 02:55:57.027+0000 INFO  [org.neo4j]: [5901.db\neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=64b)
+2014-08-26 02:55:57.028+0000 INFO  [org.neo4j]: [5901.db\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=63b)
+2014-08-26 02:55:57.031+0000 INFO  [org.neo4j]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2014-08-26 02:55:57.034+0000 INFO  [org.neo4j]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2014-08-26 02:55:57.039+0000 INFO  [org.neo4j]: Opened logical log [5901.db\nioneo_logical.log.1] version=0, lastTxId=1 (clean)
+2014-08-26 02:55:57.056+0000 INFO  [org.neo4j]: Rebuilding lucene scan store, this may take a while
+2014-08-26 02:55:57.058+0000 INFO  [org.neo4j]: Lucene scan store rebuilt (roughly -1 nodes)
+2014-08-26 02:55:57.060+0000 INFO  [org.neo4j]: TM new log: tm_tx_log.1
+2014-08-26 02:55:57.072+0000 INFO  [org.neo4j]: Kernel health set to OK
+2014-08-26 02:55:57.075+0000 INFO  [org.neo4j]: Opened logical log [5901.db\index\lucene.log.1] version=0, lastTxId=1 (clean)
+2014-08-26 02:55:57.084+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-08-26 02:55:57.085+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1409021755788, id:-4208957809034460815, store version: 13843131341501958]
+2014-08-26 02:55:57.085+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.3
+2014-08-26 02:55:57.085+0000 INFO  [org.neo4j]: Neo4j component versions:
+2014-08-26 02:55:57.090+0000 INFO  [org.neo4j]:   Neo4j - JMX support (neo4j-jmx), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2014-08-26 02:55:57.090+0000 INFO  [org.neo4j]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2014-08-26 02:55:57.090+0000 INFO  [org.neo4j]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2014-08-26 02:55:57.091+0000 INFO  [org.neo4j]:   Neo4j - Cypher (neo4j-cypher), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2014-08-26 02:55:57.091+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2014-08-26 02:55:57.091+0000 INFO  [org.neo4j]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2014-08-26 02:55:57.091+0000 INFO  [org.neo4j]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2014-08-26 02:55:57.091+0000 INFO  [org.neo4j]:   Neo4j Community (neo4j), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2014-08-26 02:55:57.091+0000 INFO  [org.neo4j]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2014-08-26 02:55:57.091+0000 INFO  [org.neo4j]:   neo4j-udc, version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2014-08-26 02:55:57.092+0000 INFO  [org.neo4j]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2014-08-26 02:55:57.092+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-08-26 02:55:57.092+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-08-26 02:55:57.092+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.1
+      SchemaStore v0.A.1
+      NodeStore v0.A.1
+      RelationshipStore v0.A.1
+      RelationshipTypeStore v0.A.1
+      LabelTokenStore v0.A.1
+      PropertyStore v0.A.1
+      PropertyIndexStore v0.A.1
+      StringPropertyStore v0.A.1
+      ArrayPropertyStore v0.A.1
+2014-08-26 02:55:57.092+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-08-26 02:55:57.092+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-08-26 02:55:57.093+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      SchemaStore: used=1 high=0
+      NodeStore: used=0 high=-1
+      RelationshipStore: used=0 high=-1
+      RelationshipTypeStore: used=0 high=-1
+      LabelTokenStore: used=0 high=-1
+      PropertyStore: used=0 high=-1
+      PropertyIndexStore: used=0 high=-1
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2014-08-26 02:55:57.093+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-08-26 02:55:57.093+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-08-26 02:55:57.094+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-08-26 02:55:57.094+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-08-26 02:55:57.095+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 237886238720 / 83048988672 / 34
+Storage files: (filename : modification date - size)
+      active_tx_log: 2014-08-26T03:55:57+0100 - 11.00 B
+      index:
+        lucene-store.db: 2014-08-26T03:55:57+0100 - 40.00 B
+        lucene.log.1: 2014-08-26T03:55:57+0100 - 16.00 B
+        lucene.log.active: 2014-08-26T03:55:57+0100 - 4.00 B
+      - Total: 2014-08-26T03:55:57+0100 - 60.00 B
+      lock: 2014-08-26T03:55:55+0100 - 0.00 B
+      messages.log: 2014-08-26T03:55:55+0100 - 21.79 kB
+      neostore: 2014-08-26T03:55:57+0100 - 63.00 B
+      neostore.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.labeltokenstore.db: 2014-08-26T03:55:57+0100 - 0.00 B
+      neostore.labeltokenstore.db.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.labeltokenstore.db.names: 2014-08-26T03:55:57+0100 - 38.00 B
+      neostore.labeltokenstore.db.names.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.nodestore.db: 2014-08-26T03:55:57+0100 - 0.00 B
+      neostore.nodestore.db.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.nodestore.db.labels: 2014-08-26T03:55:57+0100 - 68.00 B
+      neostore.nodestore.db.labels.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.propertystore.db: 2014-08-26T03:55:57+0100 - 0.00 B
+      neostore.propertystore.db.arrays: 2014-08-26T03:55:57+0100 - 128.00 B
+      neostore.propertystore.db.arrays.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.propertystore.db.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.propertystore.db.index: 2014-08-26T03:55:57+0100 - 0.00 B
+      neostore.propertystore.db.index.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.propertystore.db.index.keys: 2014-08-26T03:55:57+0100 - 38.00 B
+      neostore.propertystore.db.index.keys.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.propertystore.db.strings: 2014-08-26T03:55:57+0100 - 128.00 B
+      neostore.propertystore.db.strings.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.relationshipstore.db: 2014-08-26T03:55:57+0100 - 0.00 B
+      neostore.relationshipstore.db.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.relationshiptypestore.db: 2014-08-26T03:55:57+0100 - 0.00 B
+      neostore.relationshiptypestore.db.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2014-08-26T03:55:57+0100 - 38.00 B
+      neostore.relationshiptypestore.db.names.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      neostore.schemastore.db: 2014-08-26T03:55:57+0100 - 64.00 B
+      neostore.schemastore.db.id: 2014-08-26T03:55:56+0100 - 9.00 B
+      nioneo_logical.log.1: 2014-08-26T03:55:57+0100 - 16.00 B
+      nioneo_logical.log.active: 2014-08-26T03:55:57+0100 - 4.00 B
+      schema:
+        label:
+          lucene:
+            write.lock: 2014-08-26T03:55:57+0100 - 0.00 B
+          - Total: 2014-08-26T03:55:57+0100 - 0.00 B
+        - Total: 2014-08-26T03:55:57+0100 - 0.00 B
+      - Total: 2014-08-26T03:55:57+0100 - 0.00 B
+      store_lock: 2014-08-26T03:55:55+0100 - 0.00 B
+      tm_tx_log.1: 2014-08-26T03:55:57+0100 - 0.00 B
+2014-08-26 02:55:57.112+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-08-26 02:55:57.112+0000 INFO  [org.neo4j]: Database is now ready
+2014-08-26 02:55:57.113+0000 INFO  [org.neo4j]: GC Monitor started. 
+2014-08-26 02:56:00.081+0000 INFO  [org.neo4j]: Shutdown started
+2014-08-26 02:56:00.081+0000 INFO  [org.neo4j]: Database is now unavailable
+2014-08-26 02:56:00.081+0000 INFO  [org.neo4j]: GC Monitor stopped. 
+2014-08-26 02:56:00.115+0000 INFO  [org.neo4j]: Closed log 5901.db\index\lucene.log
+2014-08-26 02:56:00.125+0000 INFO  [org.neo4j]: TM shutting down
+2014-08-26 02:56:00.322+0000 INFO  [org.neo4j]: Closed log 5901.db\nioneo_logical.log
+2014-08-26 02:56:00.350+0000 INFO  [org.neo4j]: 5901.db\neostore.relationshiptypestore.db.names hit=0 miss=7 switches=0 ooe=0
+2014-08-26 02:56:00.376+0000 INFO  [org.neo4j]: 5901.db\neostore.relationshiptypestore.db hit=0 miss=7 switches=0 ooe=0
+2014-08-26 02:56:00.414+0000 INFO  [org.neo4j]: 5901.db\neostore.labeltokenstore.db.names hit=0 miss=7 switches=0 ooe=0
+2014-08-26 02:56:00.448+0000 INFO  [org.neo4j]: 5901.db\neostore.labeltokenstore.db hit=0 miss=7 switches=0 ooe=0
+2014-08-26 02:56:00.480+0000 INFO  [org.neo4j]: 5901.db\neostore.propertystore.db.strings hit=252 miss=0 switches=0 ooe=0
+2014-08-26 02:56:00.510+0000 INFO  [org.neo4j]: 5901.db\neostore.propertystore.db.index.keys hit=0 miss=15 switches=0 ooe=0
+2014-08-26 02:56:00.543+0000 INFO  [org.neo4j]: 5901.db\neostore.propertystore.db.index hit=0 miss=15 switches=0 ooe=0
+2014-08-26 02:56:00.573+0000 INFO  [org.neo4j]: 5901.db\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:56:00.611+0000 INFO  [org.neo4j]: 5901.db\neostore.propertystore.db hit=473 miss=0 switches=0 ooe=0
+2014-08-26 02:56:00.654+0000 INFO  [org.neo4j]: 5901.db\neostore.relationshipstore.db hit=212 miss=0 switches=0 ooe=0
+2014-08-26 02:56:00.684+0000 INFO  [org.neo4j]: 5901.db\neostore.nodestore.db.labels hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:56:00.729+0000 INFO  [org.neo4j]: 5901.db\neostore.nodestore.db hit=140 miss=0 switches=0 ooe=0
+2014-08-26 02:56:00.769+0000 INFO  [org.neo4j]: 5901.db\neostore.schemastore.db hit=0 miss=0 switches=0 ooe=0
+2014-08-26 02:56:00.801+0000 INFO  [org.neo4j]: 5901.db\neostore hit=0 miss=47 switches=0 ooe=0
+2014-08-26 02:56:00.834+0000 INFO  [org.neo4j]: NeoStore closed
+2014-08-26 02:56:00.834+0000 INFO  [org.neo4j]: --- STOPPING diagnostics START ---
+2014-08-26 02:56:00.834+0000 INFO  [org.neo4j]: --- STOPPING diagnostics END ---
+2014-08-26 03:04:20.811+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2014-08-26 03:04:20.812+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=27M
+    neostore.nodestore.db.mapped_memory=7M
+    allow_store_upgrade=true
+    neostore.relationshipstore.db.mapped_memory=34M
+    neostore.propertystore.db.strings.mapped_memory=23M
+    store_dir=C:\Users\my\workspace2\ExtractWorkflowRun\5901.db
+    neostore.propertystore.db.arrays.mapped_memory=27M
+    ephemeral=false
+2014-08-26 03:04:20.817+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2014-08-26 03:04:20.818+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 7.90 GB
+    Free Physical memory: 3.33 GB
+    Committed virtual memory: 367.27 MB
+    Total swap space: 17.07 GB
+    Free swap space: 11.55 GB
+2014-08-26 03:04:20.820+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 91.59 MB
+    Total memory: 185.00 MB
+    Max   memory: 455.00 MB
+    Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+    Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.56 MB, used=2.46 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: PS Eden Space (Heap memory): committed=131.50 MB, used=65.95 MB, max=149.50 MB, threshold=?
+    Memory Pool: PS Survivor Space (Heap memory): committed=10.50 MB, used=7.89 MB, max=10.50 MB, threshold=?
+    Memory Pool: PS Old Gen (Heap memory): committed=43.00 MB, used=19.58 MB, max=341.00 MB, threshold=321.00 MB
+    Memory Pool: PS Perm Gen (Non-heap memory): committed=42.50 MB, used=42.34 MB, max=384.00 MB, threshold=0.00 B
+2014-08-26 03:04:20.822+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Windows 8; version: 6.2; arch: amd64; cpus: 4
+    Process id: 34580@myPC
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Europe/London
+2014-08-26 03:04:20.823+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 24.60-b09
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Xms64m, -Xmx512m, -Xverify:none, -Dsun.java2d.noddraw=true, -Dsun.awt.noerasebackground=true, -Dnetbeans.indexing.noFileRefresh=true, -Dplugin.manager.check.interval=EVERY_DAY, -Duser.language=zh, -Duser.country=CN, -XX:MaxPermSize=384m, -Dnetbeans.user.dir=C:\Users\my\Desktop\Gephi-0.8.2\bin, -Djdk.home=C:\Program Files\Java\jdk1.7.0_60, -splash:C:\Users\my\AppData\Roaming\.gephi\0.8.2\dev\var\cache\splash.png, -Dnetbeans.home=C:\Users\my\Desktop\Gephi-0.8.2\platform, -Dnetbeans.user=C:\Users\my\AppData\Roaming\.gephi\0.8.2\dev, -Dnetbeans.default_userdir_root=, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=C:\Users\my\AppData\Roaming\.gephi\0.8.2\dev\var\log\heapdump.hprof, -Dnetbeans.system_http_proxy=DIRECT, -Dsun.awt.keepWorkingSetOnMinimize=true, -Dnetbeans.dirs=C:\Users\my\Desktop\Gephi-0.8.2\gephi;C:\Users\my\Desktop\Gephi-0.8.2\platform]
+2014-08-26 03:04:20.824+0000 INFO  [org.neo4j]: Java classpath:
+     [bootstrap] C:\Program Files\Java\jdk1.7.0_60\jre\classes
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_cs.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_nl_NL.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/org-openide-util.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_sq.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_si.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_ru.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_si.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_nl_NL.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_cs.jar
+     [bootstrap] C:\Program Files\Java\jdk1.7.0_60\jre\lib\jfr.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_gl_ES.jar
+     [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_60/jre/lib/ext/sunmscapi.jar
+     [bootstrap] C:\Program Files\Java\jdk1.7.0_60\jre\lib\resources.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ro.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_es.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ja.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_gl_ES.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_pt_BR.jar
+     [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_60/lib/dt.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_cs.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_fr.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_de.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_sv.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_tr.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_gl_ES.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_in_ID.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ca.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_pt_PT.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ru.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ru.jar
+     [bootstrap] C:\Program Files\Java\jdk1.7.0_60\jre\lib\jce.jar
+     [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_60/jre/lib/ext/sunjce_provider.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_ca.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_si.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_bg.jar
+     [bootstrap] C:\Program Files\Java\jdk1.7.0_60\jre\lib\sunrsasign.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_fr.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_ru.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_es.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_de.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_zh_TW.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_pt_BR.jar
+     [classpath] C:\Program Files\Java\jdk1.7.0_60\lib\dt.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_zh_TW.jar
+     [bootstrap] C:\Program Files\Java\jdk1.7.0_60\jre\lib\jsse.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ro.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_bg.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_it.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_pt_BR.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_sq.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_pl.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_fr.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_pl.jar
+     [classpath] C:\Program Files\Java\jdk1.7.0_60\lib\tools.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_sq.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_tr.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_in_ID.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_pt_PT.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_cs.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ko.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_zh_CN.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_it.jar
+     [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_60/jre/lib/ext/localedata.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_ro.jar
+     [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_60/jre/lib/ext/dnsns.jar
+     [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_60/jre/lib/ext/sunec.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_ja.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_zh_CN.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_sv.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_si.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_nl_NL.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_fr.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_zh_CN.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_sv.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_ja.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_zh_TW.jar
+     [loader.1] file:/C:/Program%20Files/Java/jdk1.7.0_60/lib/tools.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_pl.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_de.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_de.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_bg.jar
+     [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_60/jre/lib/ext/jaccess.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_pt_PT.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_gl_ES.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ca.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_it.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_ko.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_tr.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_es.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_sv.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_tr.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_in_ID.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_bg.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_ko.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_ar_SA.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/org-openide-modules.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_zh_CN.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_ca.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_ar_SA.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ja.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_pl.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_ro.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/boot_it.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_es.jar
+     [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_60/jre/lib/ext/access-bridge-64.jar
+     [bootstrap] C:\Program Files\Java\jdk1.7.0_60\jre\lib\charsets.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-modules_nl_NL.jar
+     [bootstrap] C:\Program Files\Java\jdk1.7.0_60\jre\lib\rt.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_ar_SA.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util_pt_BR.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/org-openide-util-lookup.jar
+     [loader.2] file:/C:/Program%20Files/Java/jdk1.7.0_60/jre/lib/ext/zipfs.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_ko.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/locale/org-openide-util-lookup_in_ID.jar
+     [classpath + loader.1] file:/C:/Users/my/Desktop/Gephi-0.8.2/platform/lib/boot.jar
+2014-08-26 03:04:20.835+0000 INFO  [org.neo4j]: Library path:
+    C:\Users\my\Desktop\Gephi-0.8.2\bin
+    C:\Windows\Sun\Java\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\Program Files (x86)\Intel\iCLS Client
+    C:\Program Files\Intel\iCLS Client
+    C:\Windows\System32
+    C:\Windows
+    C:\Windows\System32\wbem
+    C:\Windows\System32\WindowsPowerShell\v1.0
+    C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+    C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+    C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+    C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+    C:\Program Files\Intel\WiFi\bin
+    C:\Program Files\Common Files\Intel\WirelessCommon
+    C:\Program Files (x86)\Windows Live\Shared
+    C:\Users\my\Desktop\Gephi-0.8.2\%M2_HOME%\bin
+    C:\Program Files\Java\jdk1.7.0_60\bin
+    C:\Program Files\Java\jdk1.7.0_60\lib\tools.jar
+    C:\Program Files\EmEditor
+    C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn
+    C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+    C:\Program Files\Microsoft SQL Server\110\DTS\Binn
+    C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio
+    C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn
+    C:\Users\my\Desktop\project\apache-maven-3.2.1-bin\apache-maven-3.2.1\bin
+    C:\Users\my\Desktop\Gephi-0.8.2
+2014-08-26 03:04:20.845+0000 INFO  [org.neo4j]: System.properties:
+    netbeans.user = C:\Users\my\AppData\Roaming\.gephi\0.8.2\dev
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    netbeans.autoupdate.version = 1.23
+    plugin.manager.check.interval = EVERY_DAY
+    sun.desktop = windows
+    netbeans.default_userdir_root = 
+    user.name = my
+    user.language = zh
+    sun.boot.library.path = C:\Program Files\Java\jdk1.7.0_60\jre\bin
+    user.timezone = Europe/London
+    sun.arch.data.model = 64
+    sun.cpu.isalist = amd64
+    netbeans.productversion = Gephi 0.8.2 201210100934
+    sun.jnu.encoding = GBK
+    file.encoding.pkg = sun.io
+    file.separator = \
+    user.country = CN
+    sun.awt.noerasebackground = true
+    netbeans.buildnumber = 201210100934
+    org.openide.version = deprecated
+    netbeans.hash.code = unique=0a5146139-1af6-4881-bbd6-e3e02c81e945_19ac4d2b-dec5-4984-ab5a-a0578cfe9525
+    netbeans.system_http_proxy = DIRECT
+    netbeans.autoupdate.country = CN
+    netbeans.indexing.noFileRefresh = true
+    netbeans.user.dir = C:\Users\my\Desktop\Gephi-0.8.2\bin
+    sun.awt.keepWorkingSetOnMinimize = true
+    path.separator = ;
+    user.variant = 
+    netbeans.dynamic.classpath = C:\Users\my\Desktop\Gephi-0.8.2\platform\core\core.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\org-openide-filesystems.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_ar_SA.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_bg.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_ca.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_cs.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_de.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_es.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_fr.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_gl_ES.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_in_ID.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_it.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_ja.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_ko.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_nl_NL.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_pl.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_pt_BR.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_pt_PT.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_ro.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_ru.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_si.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_sq.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_sv.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_tr.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_zh_CN.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\core_zh_TW.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ar_SA.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_bg.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ca.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_cs.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_de.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_es.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_fr.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_gl_ES.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_in_ID.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_it.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ja.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ko.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_nl_NL.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_pl.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_pt_BR.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_pt_PT.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ro.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_ru.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_si.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_sq.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_sv.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_tr.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_zh_CN.jar;C:\Users\my\Desktop\Gephi-0.8.2\platform\core\locale\org-openide-filesystems_zh_TW.jar;C:\Users\my\Desktop\Gephi-0.8.2\gephi\core\locale\core_gephi.jar
+    jna.boot.library.name = jnidispatch-340
+    sun.awt.enableExtraMouseButtons = true
+    sun.io.unicode.encoding = UnicodeLittle
+    netbeans.autoupdate.variant = 
+    awt.toolkit = sun.awt.windows.WToolkit
+    user.script = 
+    org.openide.major.version = IDE/1
+    user.home = C:\Users\my
+    netbeans.home = C:\Users\my\Desktop\Gephi-0.8.2\platform
+    org.xml.sax.driver = com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+    sun.java2d.noddraw = true
+    jdk.home = C:\Program Files\Java\jdk1.7.0_60
+    org.openide.specification.version = 6.2
+    sun.cpu.endian = little
+    sun.os.patch.level = 
+    netbeans.dirs = C:\Users\my\Desktop\Gephi-0.8.2\gephi;C:\Users\my\Desktop\Gephi-0.8.2\platform
+    netbeans.autoupdate.language = zh
+    user.dir = C:\Users\my\Desktop\Gephi-0.8.2
+    file.encoding = GBK
+2014-08-26 03:04:20.846+0000 INFO  [org.neo4j]: Network information:
+    Interface Software Loopback Interface 1:
+        address: 127.0.0.1
+        address: 0:0:0:0:0:0:0:1
+    Interface Microsoft Kernel Debug Network Adapter:
+    Interface Intel(R) Dual Band Wireless-N 7260:
+        address: 192.168.0.7
+        address: fe80:0:0:0:10fd:2900:e540:f1a2%3
+    Interface ASIX AX88772B USB2.0 to Fast Ethernet Adapter:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter:
+        address: fe80:0:0:0:8517:14e5:3cce:b60c%5
+    Interface Microsoft ISATAP Adapter:
+    Interface Microsoft 6to4 Adapter:
+    Interface Teredo Tunneling Pseudo-Interface:
+    Interface Microsoft ISATAP Adapter #4:
+    Interface VMware Virtual Ethernet Adapter for VMnet1:
+        address: 192.168.32.1
+        address: fe80:0:0:0:e0dd:53c6:e592:81f7%10
+    Interface VMware Virtual Ethernet Adapter for VMnet8:
+        address: 192.168.132.1
+        address: fe80:0:0:0:dd4a:2063:b357:1b46%11
+    Interface Microsoft ISATAP Adapter #5:
+    Interface Microsoft ISATAP Adapter #6:
+    Interface Microsoft Hosted Network Virtual Adapter:
+    Interface Intel(R) Dual Band Wireless-N 7260-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-Virtual WiFi Filter Driver-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-Native WiFi Filter Driver-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-QoS Packet Scheduler-0000:
+    Interface Intel(R) Dual Band Wireless-N 7260-WFP 802.3 MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+    Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2014-08-26 03:04:20.881+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2014-08-26 03:04:21.820+0000 INFO  [org.neo4j]: Starting upgrade of database store files
+2014-08-26 03:04:21.829+0000 INFO  [org.neo4j]: Store upgrade 10% complete
+2014-08-26 03:04:21.832+0000 INFO  [org.neo4j]: Store upgrade 20% complete
+2014-08-26 03:04:21.834+0000 INFO  [org.neo4j]: Store upgrade 30% complete
+2014-08-26 03:04:21.836+0000 INFO  [org.neo4j]: Store upgrade 40% complete
+2014-08-26 03:04:21.838+0000 INFO  [org.neo4j]: Store upgrade 50% complete
+2014-08-26 03:04:21.840+0000 INFO  [org.neo4j]: Store upgrade 60% complete
+2014-08-26 03:04:21.842+0000 INFO  [org.neo4j]: Store upgrade 70% complete
+2014-08-26 03:04:21.845+0000 INFO  [org.neo4j]: Store upgrade 80% complete
+2014-08-26 03:04:21.847+0000 INFO  [org.neo4j]: Store upgrade 90% complete
+2014-08-26 03:04:21.849+0000 INFO  [org.neo4j]: Store upgrade 100% complete
+2014-08-26 03:04:22.442+0000 INFO  [org.neo4j]: Finished upgrade of database store files
+2014-08-26 03:04:22.738+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=304b)
+2014-08-26 03:04:22.741+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=35b)
+2014-08-26 03:04:22.742+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=304b)
+2014-08-26 03:04:22.744+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=35b)
+2014-08-26 03:04:22.745+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.propertystore.db.strings] brickCount=1 brickSize=24064b mappedMem=24117248b (storeSize=32384b)
+2014-08-26 03:04:22.746+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=608b)
+2014-08-26 03:04:22.747+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=135b)
+2014-08-26 03:04:22.748+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.propertystore.db.arrays] brickCount=0 brickSize=28288b mappedMem=28311552b (storeSize=128b)
+2014-08-26 03:04:22.750+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.propertystore.db] brickCount=0 brickSize=28290b mappedMem=28311552b (storeSize=19393b)
+2014-08-26 03:04:22.752+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.relationshipstore.db] brickCount=0 brickSize=35632b mappedMem=35651584b (storeSize=7208b)
+2014-08-26 03:04:22.753+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.nodestore.db.labels non clean shutdown detected
+2014-08-26 03:04:22.753+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=93b)
+2014-08-26 03:04:22.755+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.nodestore.db] brickCount=0 brickSize=7335b mappedMem=7340032b (storeSize=2100b)
+2014-08-26 03:04:22.757+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.schemastore.db non clean shutdown detected
+2014-08-26 03:04:22.757+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=82b)
+2014-08-26 03:04:22.759+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.relationshipgroupstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=40b)
+2014-08-26 03:04:22.760+0000 INFO  [org.neo4j]: [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=63b)
+2014-08-26 03:04:22.994+0000 INFO  [org.neo4j]: Opened logical log [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\nioneo_logical.log.1] version=1, lastTxId=31 (clean)
+2014-08-26 03:04:23.059+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.nodestore.db.labels rebuild id generator, highId=1 defragged count=0
+2014-08-26 03:04:23.132+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.schemastore.db rebuild id generator, highId=1 defragged count=0
+2014-08-26 03:04:23.169+0000 INFO  [org.neo4j]: TM new log: tm_tx_log.1
+2014-08-26 03:04:23.198+0000 INFO  [org.neo4j]: Opened logical log [C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\index\lucene.log.1] version=1, lastTxId=1 (clean)
+2014-08-26 03:04:23.212+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-08-26 03:04:23.213+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1409021755788, id:-4208957809034460815, store version: 14124606318212614]
+2014-08-26 03:04:23.215+0000 INFO  [org.neo4j]: Kernel version: neo4j-kernel, version: 2.1.0-M01
+2014-08-26 03:04:23.216+0000 INFO  [org.neo4j]: Neo4j component versions:
+2014-08-26 03:04:23.217+0000 INFO  [org.neo4j]:   neo4j-lucene-index, version: 2.1.0-M01; revision: 2.1.0-M01:master:68/70812a5a9d57c6720727ca1cf7057f8784094041
+2014-08-26 03:04:23.217+0000 INFO  [org.neo4j]:   neo4j-kernel, version: 2.1.0-M01; revision: 2.1.0-M01:master:68/70812a5a9d57c6720727ca1cf7057f8784094041
+2014-08-26 03:04:23.217+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-08-26 03:04:23.219+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-08-26 03:04:23.220+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.2
+      SchemaStore v0.A.2
+      NodeStore v0.A.2
+      RelationshipStore v0.A.2
+      RelationshipTypeStore v0.A.2
+      LabelTokenStore v0.A.2
+      PropertyStore v0.A.2
+      PropertyIndexStore v0.A.2
+      StringPropertyStore v0.A.2
+      ArrayPropertyStore v0.A.2
+      RelationshipGroupStore v0.A.2
+2014-08-26 03:04:23.220+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-08-26 03:04:23.220+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-08-26 03:04:23.220+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      SchemaStore: used=1 high=0
+      NodeStore: used=140 high=139
+      RelationshipStore: used=212 high=211
+      RelationshipTypeStore: used=7 high=6
+      LabelTokenStore: used=7 high=6
+      PropertyStore: used=473 high=472
+      PropertyIndexStore: used=15 high=14
+      StringPropertyStore: used=253 high=252
+      ArrayPropertyStore: used=1 high=0
+      RelationshipGroupStore: used=2 high=1
+2014-08-26 03:04:23.221+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-08-26 03:04:23.221+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-08-26 03:04:23.221+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-08-26 03:04:23.221+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-08-26 03:04:23.223+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 237886238720 / 83047804928 / 34
+Storage files: (filename : modification date - size)
+      active_tx_log: 2014-08-26T04:04:23+0100 - 11.00 B
+      index:
+        lucene-store.db: 2014-08-26T03:56:00+0100 - 40.00 B
+        lucene.log.1: 2014-08-26T04:04:23+0100 - 16.00 B
+        lucene.log.active: 2014-08-26T04:04:23+0100 - 4.00 B
+        lucene.log.v0: 2014-08-26T03:56:00+0100 - 16.00 B
+      - Total: 2014-08-26T04:04:23+0100 - 76.00 B
+      lock: 2014-08-26T04:04:20+0100 - 0.00 B
+      messages.log: 2014-08-26T04:04:21+0100 - 58.99 kB
+      neostore: 2014-08-26T04:04:22+0100 - 63.00 B
+      neostore.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.labeltokenstore.db: 2014-08-26T04:04:22+0100 - 35.00 B
+      neostore.labeltokenstore.db.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.labeltokenstore.db.names: 2014-08-26T04:04:22+0100 - 304.00 B
+      neostore.labeltokenstore.db.names.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.nodestore.db: 2014-08-26T04:04:22+0100 - 2.05 kB
+      neostore.nodestore.db.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.nodestore.db.labels: 2014-08-26T04:04:22+0100 - 93.00 B
+      neostore.nodestore.db.labels.id: 2014-08-26T04:04:23+0100 - 9.00 B
+      neostore.propertystore.db: 2014-08-26T04:04:22+0100 - 18.94 kB
+      neostore.propertystore.db.arrays: 2014-08-26T04:04:22+0100 - 128.00 B
+      neostore.propertystore.db.arrays.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.propertystore.db.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.propertystore.db.index: 2014-08-26T04:04:22+0100 - 135.00 B
+      neostore.propertystore.db.index.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.propertystore.db.index.keys: 2014-08-26T04:04:22+0100 - 608.00 B
+      neostore.propertystore.db.index.keys.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.propertystore.db.strings: 2014-08-26T04:04:22+0100 - 31.63 kB
+      neostore.propertystore.db.strings.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.relationshipgroupstore.db: 2014-08-26T04:04:22+0100 - 40.00 B
+      neostore.relationshipgroupstore.db.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.relationshipstore.db: 2014-08-26T04:04:22+0100 - 7.04 kB
+      neostore.relationshipstore.db.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.relationshiptypestore.db: 2014-08-26T04:04:22+0100 - 35.00 B
+      neostore.relationshiptypestore.db.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2014-08-26T04:04:22+0100 - 304.00 B
+      neostore.relationshiptypestore.db.names.id: 2014-08-26T04:04:22+0100 - 9.00 B
+      neostore.schemastore.db: 2014-08-26T04:04:22+0100 - 82.00 B
+      neostore.schemastore.db.id: 2014-08-26T04:04:23+0100 - 9.00 B
+      nioneo_logical.log.1: 2014-08-26T04:04:22+0100 - 16.00 B
+      nioneo_logical.log.active: 2014-08-26T04:04:22+0100 - 4.00 B
+      schema:
+        label:
+          lucene:
+            segments.gen: 2014-08-26T03:56:00+0100 - 20.00 B
+            segments_1: 2014-08-26T03:56:00+0100 - 242.00 B
+            write.lock: 2014-08-26T04:04:22+0100 - 0.00 B
+            _0.fdt: 2014-08-26T03:55:58+0100 - 185.00 B
+            _0.fdx: 2014-08-26T03:55:58+0100 - 44.00 B
+            _0.fnm: 2014-08-26T03:55:58+0100 - 41.00 B
+            _0.frq: 2014-08-26T03:55:58+0100 - 31.00 B
+            _0.nrm: 2014-08-26T03:55:58+0100 - 4.00 B
+            _0.tii: 2014-08-26T03:55:58+0100 - 35.00 B
+            _0.tis: 2014-08-26T03:55:58+0100 - 108.00 B
+          - Total: 2014-08-26T04:04:22+0100 - 710.00 B
+        - Total: 2014-08-26T03:55:57+0100 - 710.00 B
+      - Total: 2014-08-26T03:55:57+0100 - 710.00 B
+      store_lock: 2014-08-26T03:55:55+0100 - 0.00 B
+      tm_tx_log.1: 2014-08-26T04:04:23+0100 - 0.00 B
+      upgrade:
+      - Total: 2014-08-26T04:04:22+0100 - 0.00 B
+      upgrade_backup:
+        active_tx_log: 2014-08-26T03:55:57+0100 - 11.00 B
+        messages.log: 2014-08-26T04:04:22+0100 - 53.08 kB
+        neostore: 2014-08-26T03:56:00+0100 - 78.00 B
+        neostore.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.labeltokenstore.db: 2014-08-26T03:56:00+0100 - 57.00 B
+        neostore.labeltokenstore.db.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.labeltokenstore.db.names: 2014-08-26T03:56:00+0100 - 330.00 B
+        neostore.labeltokenstore.db.names.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.nodestore.db: 2014-08-26T03:56:00+0100 - 1.93 kB
+        neostore.nodestore.db.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.nodestore.db.labels: 2014-08-26T03:56:00+0100 - 93.00 B
+        neostore.nodestore.db.labels.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.propertystore.db: 2014-08-26T03:56:00+0100 - 18.96 kB
+        neostore.propertystore.db.arrays: 2014-08-26T03:56:00+0100 - 153.00 B
+        neostore.propertystore.db.arrays.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.propertystore.db.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.propertystore.db.index: 2014-08-26T03:56:00+0100 - 160.00 B
+        neostore.propertystore.db.index.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.propertystore.db.index.keys: 2014-08-26T03:56:00+0100 - 634.00 B
+        neostore.propertystore.db.index.keys.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.propertystore.db.strings: 2014-08-26T03:56:00+0100 - 31.65 kB
+        neostore.propertystore.db.strings.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.relationshipstore.db: 2014-08-26T03:56:00+0100 - 6.86 kB
+        neostore.relationshipstore.db.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.relationshiptypestore.db: 2014-08-26T03:56:00+0100 - 63.00 B
+        neostore.relationshiptypestore.db.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.relationshiptypestore.db.names: 2014-08-26T03:56:00+0100 - 330.00 B
+        neostore.relationshiptypestore.db.names.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        neostore.schemastore.db: 2014-08-26T03:56:00+0100 - 82.00 B
+        neostore.schemastore.db.id: 2014-08-26T03:56:00+0100 - 9.00 B
+        nioneo_logical.log.active: 2014-08-26T03:56:00+0100 - 4.00 B
+        nioneo_logical.log.v0: 2014-08-26T03:56:00+0100 - 91.63 kB
+        tm_tx_log.1: 2014-08-26T03:56:00+0100 - 3.03 kB
+      - Total: 2014-08-26T04:04:22+0100 - 209.20 kB
+2014-08-26 03:04:23.249+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2014-08-26 03:04:23.277+0000 INFO  [org.neo4j]: GC Monitor started. 
+2014-08-26 03:04:23.289+0000 INFO  [org.neo4j]: Database is now ready
+2014-08-26 03:04:39.707+0000 INFO  [org.neo4j]: Shutdown started
+2014-08-26 03:04:39.708+0000 INFO  [org.neo4j]: Database is now unavailable
+2014-08-26 03:04:39.709+0000 INFO  [org.neo4j]: GC Monitor stopped. 
+2014-08-26 03:04:39.753+0000 INFO  [org.neo4j]: Closed log C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\index\lucene.log
+2014-08-26 03:04:39.770+0000 INFO  [org.neo4j]: TM shutting down
+2014-08-26 03:04:39.847+0000 INFO  [org.neo4j]: Closed log C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\nioneo_logical.log
+2014-08-26 03:04:39.884+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.relationshiptypestore.db.names hit=0 miss=14 switches=0 ooe=0
+2014-08-26 03:04:39.916+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.relationshiptypestore.db hit=0 miss=7 switches=0 ooe=0
+2014-08-26 03:04:39.962+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.labeltokenstore.db.names hit=0 miss=14 switches=0 ooe=0
+2014-08-26 03:04:39.996+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.labeltokenstore.db hit=0 miss=7 switches=0 ooe=0
+2014-08-26 03:04:40.038+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.propertystore.db.strings hit=130 miss=374 switches=0 ooe=0
+2014-08-26 03:04:40.068+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.propertystore.db.index.keys hit=0 miss=30 switches=0 ooe=0
+2014-08-26 03:04:40.103+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.propertystore.db.index hit=0 miss=15 switches=0 ooe=0
+2014-08-26 03:04:40.134+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-08-26 03:04:40.165+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.propertystore.db hit=473 miss=0 switches=0 ooe=0
+2014-08-26 03:04:40.190+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.relationshipstore.db hit=636 miss=0 switches=0 ooe=0
+2014-08-26 03:04:40.228+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.nodestore.db.labels hit=0 miss=0 switches=0 ooe=0
+2014-08-26 03:04:40.254+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.nodestore.db hit=420 miss=0 switches=0 ooe=0
+2014-08-26 03:04:40.291+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.schemastore.db hit=0 miss=0 switches=0 ooe=0
+2014-08-26 03:04:40.318+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore.relationshipgroupstore.db hit=0 miss=0 switches=0 ooe=0
+2014-08-26 03:04:40.366+0000 INFO  [org.neo4j]: C:\Users\my\workspace2\ExtractWorkflowRun\5901.db\neostore hit=0 miss=12 switches=0 ooe=0
+2014-08-26 03:04:40.397+0000 INFO  [org.neo4j]: NeoStore closed
+2014-08-26 03:04:40.397+0000 INFO  [org.neo4j]: --- STOPPING diagnostics START ---
+2014-08-26 03:04:40.397+0000 INFO  [org.neo4j]: --- STOPPING diagnostics END ---
