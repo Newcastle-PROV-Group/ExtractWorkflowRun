@@ -298,7 +298,13 @@ public class CreateGraph {
 	}
 
 	/**
-	 * 
+	 * This method need a parameter node
+	 *  which is a node reference 
+	 *  from the old database and return type 
+	 *  is a node reference from the new database.
+	 *   This method will returns a reference
+	 *    from the new database based on the node
+	 *     from the old database.
 	 * @param node
 	 *            from the old DB
 	 * @return the node from the new DB
@@ -344,6 +350,20 @@ public class CreateGraph {
 		return null;
 	}
 
+	/**
+	 * newnode is a node reference from a new database . 
+	 * node is a corresponding node reference from the old database.
+	 *  Str represents the direction of the relationships 
+	 *  and relationshiptype represents the type of the relationships.
+	 *   This method is used to draw the node and its neighbor nodes 
+	 *   and relationships, which are based on the direction and 
+	 *   the type of the relationship.
+	 * @param newnode
+	 * @param node
+	 * @param str
+	 * @param relationshiptype
+	 * @return
+	 */
 	private List<Node> picture(Node newnode, Node node, String str,
 			RelTypes relationshiptype) {
 		Iterable<Relationship> aimrelationships;
@@ -399,6 +419,18 @@ public class CreateGraph {
 		return oldNodes;
 	}
 
+	/**
+	 *  This method aim to verify whether
+	 *   the relationship has already been created or not 
+	 *   based on the parameters. 
+	 *   If the relationship is already created, 
+	 *   it returns 'true', otherwise it returns 'false'.
+	 * @param startnode
+	 * @param endnode
+	 * @param direstion
+	 * @param relationshiptype
+	 * @return
+	 */
 	private boolean verifyRelationship(Node startnode, Node endnode,
 			Direction direstion, RelTypes relationshiptype) {
 		for (Relationship neighbor : startnode.getRelationships(direstion,
@@ -583,6 +615,19 @@ public class CreateGraph {
 		System.out.println(num+" finish");
 	}
 
+	/**
+	 * This method need a parameter node 
+	 * which is a node reference from the old database 
+	 * and return type is a node reference from the new database.
+	 *  The method is used to create a new node for 
+	 *  the new database based on the node from the old database.
+	 *   Firstly the method will verify the type of the node 
+	 *   and casts the node to the corresponding type node and
+	 *    then it will get all the information from the node and
+	 *     store the information for the new node.
+	 * @param node
+	 * @return
+	 */
 	private Node addNode(Node node) {
 		Node n = getNode(node);
 		if (n != null) {
